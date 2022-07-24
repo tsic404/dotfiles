@@ -4,13 +4,17 @@
 
 - clean: ['~']
 
+- create:
+  - ~/.local/share/nvim/site/pack/packer/start
+
+- shell:
+  #  - [ "export PACKER_NVIMPDIR=~/.local/share/nvim/site/pack/packer/start/packer.nvim && [[ -d $PACKER_NVIM_DIR ]] || git clone --depth 1 https://github.com/wbthomason/packer.nvim $PACKER_NVIM_DIR", Install packer.nvim]
+
 - link:
     ~/.zshrc: zshrc
     ~/.config/zi: zi
     ~/.p10k.zsh: p10k.zsh
+    ~/.tmux.conf.local: tmux.conf.local
+    ~/.tmux.conf: tmux.conf
+    ~/.config/nvim: nvim
 
-- create:
-    - ~/downloads
-
-- shell:
-  - [git submodule update --init --recursive, Installing submodules]
