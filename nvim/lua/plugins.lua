@@ -104,6 +104,15 @@ packer.startup({
     use("b0o/schemastore.nvim")
     -- Rust 增强
     use("simrat39/rust-tools.nvim")
+
+    -- go
+    use("fatih/vim-go")
+
+    -- markdown preview
+    use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+    })
     --------------------- colorschemes --------------------
     -- tokyonight
     use("folke/tokyonight.nvim")
