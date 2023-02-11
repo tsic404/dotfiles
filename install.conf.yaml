@@ -9,13 +9,14 @@
 
 - shell:
   - [ "git submodule init && git submodule update" ]
-  #  - [ "export PACKER_NVIMPDIR=~/.local/share/nvim/site/pack/packer/start/packer.nvim && [[ -d $PACKER_NVIM_DIR ]] || git clone --depth 1 https://github.com/wbthomason/packer.nvim $PACKER_NVIM_DIR", Install packer.nvim]
 
 - link:
     ~/.zshrc: zshrc
     ~/.config/zi: zi
+    ~/.config/kitty: kitty
     ~/.p10k.zsh: p10k.zsh
+    ~/.gitconfig: gitconfig
+    ~/.gitignore: gitignore
     ~/.config/nvim: nvim
     ~/.tmux.conf: tmux/.tmux.conf
     ~/.tmux.conf.local: tmux/.tmux.conf.local
-
