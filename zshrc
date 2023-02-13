@@ -45,3 +45,4 @@ elif [[ "$(expr substr $(uname -s) 1 5)" == "Linux" ]]; then
 elif [[ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]]; then    
   [ -s "$HOME/.dotfiles/zprofile.windows" ] && \. "$HOME/.dotfiles/zprofile.windows"
 fi
+export TERM=xterm-256color
