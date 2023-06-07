@@ -9,6 +9,7 @@
 
 - shell:
   - [ "git submodule init && git submodule update" ]
+  - [ "bash init.sh" ]
 
 - link:
     ~/.zshrc: zshrc

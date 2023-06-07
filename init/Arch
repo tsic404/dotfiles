@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if ! grep -q archlinuxcn /etc/pacman.conf;then
+    echo -e '[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch\n' |sudo tee -a /etc/pacman.conf
+fi
+
+sudo pacman -Sy --noconfirm archlinuxcn-keyring archlinux-keyring
+sudo pacman -Syu --noconfirm yay git nvm rustup go neovim base base-devel cmake gcc clang gdb
+
+source /usr/share/nvm/init-nvm.sh
+nvm install --lts
+rustup install stable
+

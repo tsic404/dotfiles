@@ -1,0 +1,11 @@
+#!/bin/sh
+
+DISTRIB_ID=`lsb_release -i | awk -F: '{print $2}' | sed  's/^[[:space:]]*//g'`
+
+if [ "$DISTRIB_ID" = "Arch" ] ;then
+    bash init/Arch
+elif [ "$DISTRIB_ID" = "Deepin" ] ;then
+    bash init/Deepin
+else
+    echo "unknown linux distribution"
+fi
