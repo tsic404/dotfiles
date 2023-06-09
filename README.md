@@ -2,7 +2,7 @@
 
 1. 加入免密
 ```
-echo "$(whoami) ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/tsic
+echo "$(whoami) ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$(whoami)
 ```
 2. clone
 ```
