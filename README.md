@@ -1,18 +1,18 @@
 # dotfiles
 
-1. 加入免密
+1. make user no passwd
 ```
 echo "$(whoami) ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$(whoami)
 ```
-2. clone
+2. clone and rename
 ```
 git clone https://github.com/tsic404/dotfiles .dotfiles
 ```
-3. 安装dotbot
+3. install dotbot
 ```
 pip install dotbot 或者  yay dotbot
 ```
-4. 运行dotbot
+4. run dotbot
 ```
 dotbot -vv -c ~/.dotfiles.conf.yaml
 ```
