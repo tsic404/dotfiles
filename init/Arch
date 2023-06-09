@@ -5,9 +5,8 @@ if ! grep -q archlinuxcn /etc/pacman.conf;then
 fi
 
 sudo pacman -Sy --noconfirm archlinuxcn-keyring archlinux-keyring
-sudo pacman -Syu --noconfirm yay git nvm rustup go neovim base base-devel cmake gcc clang gdb ninja xorg
+sudo pacman -Syu --noconfirm yay git nvm rustup go neovim base base-devel cmake gcc clang gdb ninja xorg zsh tmux
 
 source /usr/share/nvm/init-nvm.sh
 nvm install --lts
 rustup install stable
-
