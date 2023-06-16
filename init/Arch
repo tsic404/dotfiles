@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 if ! grep -q archlinuxcn /etc/pacman.conf;then
     echo -e '[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch\n' |sudo tee -a /etc/pacman.conf
 fi
